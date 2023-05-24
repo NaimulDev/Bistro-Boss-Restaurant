@@ -20,11 +20,6 @@ const Section = () => {
           </p>
         </div>
       </div>
-
-      <SectionTitle
-        subHeading={"Check it out"}
-        heading={"FROM OUR MENU"}
-      ></SectionTitle>
     </section>
   );
 };
