@@ -14,11 +14,18 @@ const MenuItems = () => {
   }, []);
 
   return (
-    <div className="grid md:grid-cols-2 my-14  gap-6">
-      {menu.map((items) => (
-        <MenuItem key={items._id} items={items}></MenuItem>
-      ))}
-    </div>
+    <>
+      <div className="grid md:grid-cols-2 mt-14  gap-6">
+        {menu.map((items) => (
+          <MenuItem key={items._id} items={items}></MenuItem>
+        ))}
+      </div>
+      <div className="text-center">
+        <button className="btn btn-outline uppercase mb-12 border-0 border-b-4  w-44 ">
+          View Full Menu
+        </button>
+      </div>
+    </>
   );
 };
 
